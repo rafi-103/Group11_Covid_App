@@ -1,6 +1,6 @@
 package com.example.project_covid_app.Ayman;
 
-public class PatientDashPrimary
+public class PharmacistDashPrimary
 {
     @javafx.fxml.FXML
     public void initialize() {
