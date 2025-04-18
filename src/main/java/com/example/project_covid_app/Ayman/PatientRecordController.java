@@ -17,7 +17,10 @@ public class PatientRecordController {
                 new Patient("P001","Ayman Rahman","Depressed"),
                 new Patient("P002","Rafi",  "Cancer"),
                 new Patient("P003","Elon Musk",  "BiPolar"),
-                new Patient("P004","Sheikh Hasina",  "Schizophrenia")
+                new Patient("P004","Sheikh Hasina",  "Schizophrenia"),
+                new Patient("P005","Obaidul Kader",  "Dementia")
+
+
 
 
         );
