@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project_covid_app.Ayman.PharmacistDashboardController"
+            prefWidth="800" prefHeight="600">
+
+   <Label fx:id="lblTitle" text="Pharmacist Dashboard"
+          layoutX="300" layoutY="20" style="-fx-font-size:24"/>
+   <Button text="Logout" layoutX="700" layoutY="20" onAction="#onLogout"/>
+
+   <TabPane layoutX="20" layoutY="80" prefWidth="760" prefHeight="500">
+      <Tab text="Prescriptions">
+         <fx:include source="PrescriptionPane.fxml"/>
+      </Tab>
+      <Tab text="Inventory">
+         <fx:include source="InventoryPane.fxml"/>
+      </Tab>
+      <Tab text="Refill">
+         <fx:include source="RefillPane.fxml"/>
+      </Tab>
+      <Tab text="History">
+         <fx:include source="TransactionHistoryPane.fxml"/>
+      </Tab>
+   </TabPane>
+</AnchorPane>
+

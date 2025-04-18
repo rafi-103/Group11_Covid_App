@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project_covid_app.Ayman.WorkerDashboardController"
+            prefWidth="800" prefHeight="600">
+
+    <Label text="Support Worker Dashboard"
+           layoutX="240" layoutY="20" style="-fx-font-size:24"/>
+    <Button text="Logout" layoutX="700" layoutY="20" onAction="#onLogout"/>
+
+    <TabPane layoutX="20" layoutY="80" prefWidth="760" prefHeight="500">
+        <Tab text="Patients">
+            <fx:include source="PatientRecordPane.fxml"/>
+        </Tab>
+        <!-- Add more tabs for other goals -->
+    </TabPane>
+</AnchorPane>
