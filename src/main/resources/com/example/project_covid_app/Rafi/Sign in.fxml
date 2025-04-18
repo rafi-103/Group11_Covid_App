@@ -11,7 +11,7 @@
 <AnchorPane onKeyTyped="#PasswordONKeyTyped" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.SignInController">
    <children>
       <ComboBox fx:id="userTypeComboBox" layoutX="157.0" layoutY="226.0" prefWidth="150.0" promptText="Select type" />
-      <Button layoutX="434.0" layoutY="299.0" mnemonicParsing="false" onAction="#SigninONAction" text="Button" />
+      <Button layoutX="434.0" layoutY="299.0" mnemonicParsing="false" onAction="#SigninONAction" text="Sign in" />
       <PasswordField fx:id="passwordPasswordField" layoutX="150.0" layoutY="161.0" onKeyTyped="#PasswordONKeyTyped" prefHeight="26.0" prefWidth="294.0" />
       <TextField fx:id="UserIdTextField" layoutX="150.0" layoutY="111.0" prefHeight="26.0" prefWidth="294.0" />
       <Label layoutX="67.0" layoutY="115.0" text="User Id" />
