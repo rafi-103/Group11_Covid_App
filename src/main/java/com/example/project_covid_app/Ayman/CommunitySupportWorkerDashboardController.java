@@ -6,7 +6,10 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import java.util.prefs.Preferences;
 
-public class WorkerDashboardController {
+public class CommunitySupportWorkerDashboardController {
+    @FXML
+    private PatientRecordController nullController;
+
     @FXML
     private void onLogout() {
         Preferences.userNodeForPackage(LoginController.class).remove("loggedInRole");

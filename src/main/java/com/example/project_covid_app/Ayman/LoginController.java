@@ -30,7 +30,8 @@ public class LoginController {
         Stage stage = (Stage) tfUsername.getScene().getWindow();
         String fxml = role.equals("Pharmacist")
                 ? "/com/example/project_covid_app/Ayman/PharmacistDashboardView.fxml"
-                : "/com/example/project_covid_app/Ayman/WorkerDashboardView.fxml";
+                : "/com/example/project_covid_app/Ayman/CommunitySupportWorkerDashboardView.fxml";
+
         SceneLoader.loadScene(stage, fxml);
     }
 }

@@ -4,7 +4,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.project_covid_app.Ayman.WorkerDashboardController"
+            fx:controller="com.example.project_covid_app.Ayman.CommunitySupportWorkerDashboardController"
             prefWidth="800" prefHeight="600">
 
     <Label text="Support Worker Dashboard"

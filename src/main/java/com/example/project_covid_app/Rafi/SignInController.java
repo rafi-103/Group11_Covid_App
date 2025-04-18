@@ -33,7 +33,7 @@ public class SignInController
                 "Quarantine Monitor",
                 "Doctor",
                 "Patient",
-                "community support worker",
+                "Community support worker",
                 "Pharmacist"
         );
     }
