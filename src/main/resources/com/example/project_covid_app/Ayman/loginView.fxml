@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Ayman.LoginController">
+<AnchorPane fx:id="regisbtn" prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Ayman.LoginController">
     <Label layoutX="260" layoutY="50" style="-fx-font-size:24" text="Login Page" />
     <Label layoutX="150" layoutY="150" text="Username:" />
     <TextField fx:id="tfUsername" layoutX="250" layoutY="145" />
@@ -15,5 +15,6 @@
     <PasswordField fx:id="pfPassword" layoutX="250" layoutY="195" />
     <Label layoutX="150" layoutY="250" text="Role:" />
     <ChoiceBox fx:id="cbRole" layoutX="250" layoutY="245" />
-    <Button layoutX="270" layoutY="310" onAction="#onLogin" text="Login" />
+    <Button fx:id="loginbtn" layoutX="270" layoutY="310" onAction="#onLogin" text="Login" />
+   <Button layoutX="347.0" layoutY="310.0" onAction="#onSignIn" text="Register" />
 </AnchorPane>

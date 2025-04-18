@@ -1,15 +1,27 @@
 package com.example.project_covid_app.Ayman;
 
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.util.prefs.Preferences;
 
 public class LoginController {
     @FXML private TextField tfUsername;
     @FXML private PasswordField pfPassword;
     @FXML private ChoiceBox<String> cbRole;
+    @FXML
+    private Button loginbtn;
+    @FXML
+    private AnchorPane regisbtn;
 
     @FXML
     public void initialize() {
@@ -34,4 +46,9 @@ public class LoginController {
 
         SceneLoader.loadScene(stage, fxml);
     }
+
+    @FXML
+    public void onSignIn(ActionEvent actionEvent) {
+    }
+
 }
