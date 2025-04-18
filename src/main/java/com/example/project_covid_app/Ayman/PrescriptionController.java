@@ -14,6 +14,8 @@ public class PrescriptionController {
     @FXML private TableColumn<Prescription, String> colPatientID;
     @FXML private TableColumn<Prescription, String> colMedication;
     @FXML private TableColumn<Prescription, String> colDate;
+    @FXML
+    private Button verifybtn;
 
     @FXML
     public void initialize() {

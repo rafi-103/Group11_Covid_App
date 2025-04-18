@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.project_covid_app.Ayman.PatientRecordController"
-            prefWidth="750" prefHeight="400">
+<AnchorPane prefHeight="400" prefWidth="750" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Ayman.PatientRecordController">
 
-    <Label text="Patient Records" layoutX="10" layoutY="10"/>
+    <Label layoutX="10" layoutY="10" text="Patient Records" />
 
-    <TableView fx:id="tblPatients"
-               layoutX="10" layoutY="40"
-               prefWidth="730" prefHeight="300">
+    <TableView fx:id="tblPatients" layoutX="10" layoutY="40" prefHeight="300" prefWidth="730">
         <columns>
-            <TableColumn text="Patient ID" fx:id="colPatientID"/>
-            <TableColumn text="Name"       fx:id="colPatientName"/>
-            <TableColumn text="Status"     fx:id="colPatientStatus"/>
+            <TableColumn fx:id="colPatientID" text="Patient ID" />
+            <TableColumn fx:id="colPatientName" text="Name" />
+            <TableColumn fx:id="colPatientStatus" text="Status" />
         </columns>
     </TableView>
 
-    <Button text="Retrieve Info"
-            layoutX="200" layoutY="350"
-            onAction="#onRetrievePatientInfo"/>
+    <Button layoutX="200" layoutY="350" onAction="#onRetrievePatientInfo" text="Retrieve Info" />
 
-    <Button text="Update Status"
-            layoutX="350" layoutY="350"
-            onAction="#onUpdateHealthStatus"/>
+    <Button layoutX="350" layoutY="350" onAction="#onUpdateHealthStatus" text="Update Status" />
+   <Button fx:id="btnModify" layoutX="95.0" layoutY="350.0" onAction="#onUpdateHealthStatus" text="Modify" />
 
 </AnchorPane>

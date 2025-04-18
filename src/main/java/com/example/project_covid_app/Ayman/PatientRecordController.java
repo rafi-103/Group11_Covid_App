@@ -8,6 +8,8 @@ import javafx.scene.control.Alert.AlertType;
 public class PatientRecordController {
     @FXML private TableView<Patient> tblPatients;
     @FXML private TableColumn<Patient,String> colPatientID, colPatientName, colPatientStatus;
+    @FXML
+    private Button btnModify;
 
     @FXML
     public void initialize() {
