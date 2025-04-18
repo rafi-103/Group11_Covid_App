@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyTyped="#PasswordONKeyTyped" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.SignInController">
+   <children>
+      <ComboBox fx:id="userTypeComboBox" layoutX="157.0" layoutY="226.0" prefWidth="150.0" promptText="Select type" />
+      <Button layoutX="434.0" layoutY="299.0" mnemonicParsing="false" onAction="#SigninONAction" text="Button" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="150.0" layoutY="161.0" onKeyTyped="#PasswordONKeyTyped" prefHeight="26.0" prefWidth="294.0" />
+      <TextField fx:id="UserIdTextField" layoutX="150.0" layoutY="111.0" prefHeight="26.0" prefWidth="294.0" />
+      <Label layoutX="67.0" layoutY="115.0" text="User Id" />
+      <Label layoutX="61.0" layoutY="165.0" text="Password" />
+      <Label layoutX="256.0" layoutY="22.0" text="Sign in">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="212.0" layoutY="61.0" text="Welcome to COVID-19 App" />
+      <Button layoutX="350.0" layoutY="344.0" mnemonicParsing="false" onAction="#NewAccountOnAction" text="New to the app? Create a new account" />
+   </children>
+</AnchorPane>

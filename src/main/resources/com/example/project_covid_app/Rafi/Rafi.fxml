@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.project_covid_app.Rafi.Raficontroller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.RafiController">
+   <children>
+      <Label layoutX="269.0" layoutY="31.0" text="Sign in">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="72.0" text="Welcome to Covid-19 App" />
+      <Label layoutX="67.0" layoutY="138.0" text="User ID" />
+      <Label layoutX="61.0" layoutY="191.0" text="Password" />
+      <TextField layoutX="167.0" layoutY="134.0" prefHeight="26.0" prefWidth="282.0" />
+      <PasswordField layoutX="167.0" layoutY="186.0" prefHeight="26.0" prefWidth="282.0" />
+      <Button layoutX="396.0" layoutY="304.0" mnemonicParsing="false" text="Sign in" />
+      <Label layoutX="320.0" layoutY="340.0" text="New to the app? Create a new account" />
+   </children>
 </AnchorPane>
