@@ -13,7 +13,7 @@ public class LoginController {
 
     @FXML
     public void initialize() {
-        cbRole.setItems(FXCollections.observableArrayList("Pharmacist", "Community Support Worker"));
+        cbRole.setItems(FXCollections.observableArrayList("Pharmacist", "Community Support Worker", "Hospital","Nurse","Vaccination staff","Quarintine Monitor","Doctor", "Patient"));
         cbRole.getSelectionModel().selectFirst();
     }
 
