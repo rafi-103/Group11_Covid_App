@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project_covid_app.Ayman.InventoryController"
+            prefWidth="750" prefHeight="400">
+
+    <TableView fx:id="tblInventory"
+               layoutX="10" layoutY="10"
+               prefWidth="730" prefHeight="330">
+        <columns>
+            <TableColumn text="Med ID"       fx:id="colMedID"/>
+            <TableColumn text="Name"         fx:id="colMedName"/>
+            <TableColumn text="Quantity"     fx:id="colQuantity"/>
+        </columns>
+    </TableView>
+
+    <Button text="Update Inventory"
+            layoutX="320" layoutY="350"
+            onAction="#onUpdateInventory"/>
+
+</AnchorPane>
