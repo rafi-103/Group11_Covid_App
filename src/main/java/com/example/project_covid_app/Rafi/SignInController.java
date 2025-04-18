@@ -1,6 +1,5 @@
 package com.example.project_covid_app.Rafi;
 
-import com.example.project_covid_app.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
