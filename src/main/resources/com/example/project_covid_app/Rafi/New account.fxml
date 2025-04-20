@@ -5,11 +5,12 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="825.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.NewAccountController">
+<AnchorPane prefHeight="840.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.NewAccountController">
    <children>
       <Label layoutX="375.0" layoutY="77.0" text="Lest Create a new account!">
          <font>
@@ -46,14 +47,16 @@
       <TextField fx:id="PphoneNoTextfield" layoutX="134.0" layoutY="367.0" prefHeight="26.0" prefWidth="650.0" />
       <TextField fx:id="EPnameTextField" layoutX="133.0" layoutY="447.0" prefHeight="26.0" prefWidth="650.0" />
       <TextField fx:id="EPrelationTextfield" layoutX="134.0" layoutY="530.0" prefHeight="26.0" prefWidth="650.0" />
-      <ComboBox fx:id="UserTypeComboBox" layoutX="335.0" layoutY="702.0" prefHeight="26.0" prefWidth="218.0" promptText="Select Your User Type" />
-      <CheckBox fx:id="termsCondition" layoutX="57.0" layoutY="789.0" mnemonicParsing="false" text="By Clicking this Your are agree to COVID-19 Terms and Conditions" />
+      <ComboBox fx:id="UserTypeComboBox" layoutX="341.0" layoutY="749.0" prefHeight="26.0" prefWidth="218.0" promptText="Select Your User Type" />
+      <CheckBox fx:id="termsCondition" layoutX="55.0" layoutY="798.0" mnemonicParsing="false" text="By Clicking this Your are agree to COVID-19 Terms and Conditions" />
       <Label layoutX="39.0" layoutY="612.0" text="Password" />
       <Label layoutX="22.0" layoutY="659.0" text="Rewrite Password" />
-      <TextField fx:id="PasswordCreatPasswordfield" layoutX="144.0" layoutY="608.0" onKeyTyped="#passOnKeyTyped" prefHeight="26.0" prefWidth="650.0" promptText="This box must be field andcontain atleast 6 digit, numbers and spacial characters" />
-      <TextField fx:id="recreatpasswordPasswordfield" layoutX="144.0" layoutY="655.0" onKeyTyped="#paccOnKeyTyped" prefHeight="26.0" prefWidth="650.0" />
-      <Label layoutX="40.0" layoutY="767.0" text="COVID-19 Application Terms of Use" />
-      <Button layoutX="794.0" layoutY="776.0" mnemonicParsing="false" onAction="#SubmitOnAction" text="Submitt" />
+      <Label layoutX="39.0" layoutY="776.0" text="COVID-19 Application Terms of Use" />
       <Button layoutX="35.0" layoutY="32.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+      <PasswordField fx:id="PasswordCreatPasswordfield" layoutX="133.0" layoutY="608.0" prefHeight="26.0" prefWidth="650.0" promptText="This box must be field andcontain atleast 6 digit, numbers and spacial characters" />
+      <PasswordField fx:id="recreatpasswordPasswordfield" layoutX="133.0" layoutY="663.0" prefHeight="26.0" prefWidth="650.0" />
+      <Button layoutX="807.0" layoutY="794.0" mnemonicParsing="false" onAction="#SubmitOnAction" text="Submit" />
+      <TextField fx:id="UserNameTF" layoutX="133.0" layoutY="708.0" prefHeight="26.0" prefWidth="650.0" promptText="You can use " />
+      <Label layoutX="29.0" layoutY="712.0" text="User Name/ID" />
    </children>
 </AnchorPane>

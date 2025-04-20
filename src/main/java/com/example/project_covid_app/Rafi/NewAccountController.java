@@ -17,8 +17,6 @@ public class NewAccountController
     @javafx.fxml.FXML
     private TextField PNIDTextField;
     @javafx.fxml.FXML
-    private TextField PasswordCreatPasswordfield;
-    @javafx.fxml.FXML
     private TextField PbloodTextField;
     @javafx.fxml.FXML
     private TextField PageTextfield;
@@ -26,8 +24,6 @@ public class NewAccountController
     private TextField PGenderTextField;
     @javafx.fxml.FXML
     private TextField EPnameTextField;
-    @javafx.fxml.FXML
-    private TextField recreatpasswordPasswordfield;
     @javafx.fxml.FXML
     private TextField PNameTextField;
     @javafx.fxml.FXML
@@ -42,6 +38,12 @@ public class NewAccountController
     private CheckBox termsCondition;
     @javafx.fxml.FXML
     private ComboBox UserTypeComboBox;
+    @javafx.fxml.FXML
+    private PasswordField PasswordCreatPasswordfield;
+    @javafx.fxml.FXML
+    private PasswordField recreatpasswordPasswordfield;
+    @javafx.fxml.FXML
+    private TextField UserNameTF;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -80,6 +82,19 @@ public class NewAccountController
         String usertyp = (String) UserTypeComboBox.getValue();
         String Password = PasswordCreatPasswordfield.getText();
         String cnfrm_password = recreatpasswordPasswordfield.getText();
+        String UserName = UserNameTF.getText();
+
+        if (name.isEmpty() ||
+                nid.isEmpty() ||
+                Phone.isEmpty() ||
+                usertyp == null ||
+                Ename.isEmpty() ||
+                Ephone.isEmpty() ||
+                UserName.isEmpty() ||
+                Password.isEmpty()){
+            showAlert(Alert.AlertType.ERROR, "Missing Information", "Please Fill all required fields!");
+            return;
+        }
 
         if (dateDatepicker.getValue() == null){
             showAlert(Alert.AlertType.ERROR,"Date Error", "Please select the date of birth!");
@@ -96,16 +111,6 @@ public class NewAccountController
             return;
         }
 
-        if (name.isEmpty() ||
-                nid.isEmpty() ||
-                Phone.isEmpty() ||
-                usertyp == null ||
-                Ename.isEmpty() ||
-                Ephone.isEmpty() ||
-                Password.isEmpty()){
-            showAlert(Alert.AlertType.ERROR, "Missing Information", "Please Fill all required fields!");
-            return;
-        }
         showAlert(Alert.AlertType.INFORMATION, "Congratulation", "Account created Successful");
 
         Parent root = FXMLLoader.load(getClass().getResource("Sign in.fxml"));
@@ -122,7 +127,7 @@ public class NewAccountController
         stage.show();
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void passOnKeyTyped(Event event) {
         String password = PasswordCreatPasswordfield.getText();
         int password_length = password.length();
@@ -133,7 +138,7 @@ public class NewAccountController
         }
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void paccOnKeyTyped(Event event) {
         String password = recreatpasswordPasswordfield.getText();
         int password_length = password.length();
