@@ -1,6 +1,7 @@
 module com.example.project_covid_app {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
     requires java.prefs;
 
     opens com.example.project_covid_app to javafx.fxml;

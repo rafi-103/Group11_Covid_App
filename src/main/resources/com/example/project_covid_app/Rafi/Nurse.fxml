@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.NurseController">
    <children>
       <Label layoutX="241.0" layoutY="41.0" text="Dashboard">
@@ -14,14 +13,14 @@
          </font>
       </Label>
       <Label layoutX="224.0" layoutY="85.0" text="Welcome to your dashboard" />
-      <Button layoutX="52.0" layoutY="128.0" mnemonicParsing="false" text="Record symptoms" />
-      <Button layoutX="193.0" layoutY="128.0" mnemonicParsing="false" text="Assign beds" />
-      <Button layoutX="307.0" layoutY="128.0" mnemonicParsing="false" text="Notify Doctor" />
-      <Button layoutX="280.0" layoutY="182.0" mnemonicParsing="false" text="Medicine Schedule" />
-      <Button layoutX="441.0" layoutY="141.0" mnemonicParsing="false" text="Vaccine Tracker" />
-      <Button layoutX="164.0" layoutY="195.0" mnemonicParsing="false" text="Pharmacy Alert" />
-      <Button layoutX="58.0" layoutY="182.0" mnemonicParsing="false" text="Recovery Status" />
-      <Button layoutX="441.0" layoutY="174.0" mnemonicParsing="false" text="ICU Request" />
+      <Button layoutX="52.0" layoutY="128.0" mnemonicParsing="false" onAction="#SymptomOnAction" text="Record symptoms" />
+      <Button layoutX="193.0" layoutY="128.0" mnemonicParsing="false" onAction="#BedOnAction" text="Assign beds" />
+      <Button layoutX="307.0" layoutY="128.0" mnemonicParsing="false" onAction="#DoctorOnAction" text="Notify Doctor" />
+      <Button layoutX="280.0" layoutY="182.0" mnemonicParsing="false" onAction="#MediONAction" text="Medicine Schedule" />
+      <Button layoutX="441.0" layoutY="128.0" mnemonicParsing="false" onAction="#VaccineOnAction" text="Vaccine Tracker" />
+      <Button layoutX="164.0" layoutY="195.0" mnemonicParsing="false" onAction="#PharmacyOnAction" text="Pharmacy Alert" />
+      <Button layoutX="58.0" layoutY="182.0" mnemonicParsing="false" onAction="#RecoverONAction" text="Recovery Status" />
+      <Button layoutX="441.0" layoutY="174.0" mnemonicParsing="false" onAction="#ICUONAction" text="ICU Request" />
       <Button layoutX="307.0" layoutY="318.0" mnemonicParsing="false" text="Sign out" />
    </children>
 </AnchorPane>

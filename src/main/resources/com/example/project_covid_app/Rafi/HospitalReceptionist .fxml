@@ -15,6 +15,12 @@
       </Label>
       <Label layoutX="224.0" layoutY="69.0" text="Welcome to your dashboard" />
       <Button layoutX="512.0" layoutY="349.0" mnemonicParsing="false" onAction="#SignOutOnaction" text="Sign out" />
-      <Button layoutX="187.0" layoutY="101.0" mnemonicParsing="false" text="Appointment" />
+      <Button layoutX="187.0" layoutY="101.0" mnemonicParsing="false" onAction="#AppoinmentOnAction" text="Appointment" />
+      <Button layoutX="300.0" layoutY="101.0" mnemonicParsing="false" onAction="#PListOnAction" text="Daily List of Patients" />
+      <Button layoutX="53.0" layoutY="175.0" mnemonicParsing="false" text="COVID rules" />
+      <Button layoutX="178.0" layoutY="175.0" mnemonicParsing="false" text="Without Appoinment" />
+      <Button layoutX="336.0" layoutY="175.0" mnemonicParsing="false" text="Visitor pass" />
+      <Button layoutX="451.0" layoutY="175.0" mnemonicParsing="false" text="discharge" />
+      <Button layoutX="443.0" layoutY="101.0" mnemonicParsing="false" text="WorkShift" />
    </children>
 </AnchorPane>

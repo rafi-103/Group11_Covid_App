@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_covid_app.Rafi.AppointmentController">
+   <children>
+      <Button layoutX="33.0" layoutY="36.0" mnemonicParsing="false" onAction="#bcktohpreOnacson" text="Back" />
+      <Label layoutX="225.0" layoutY="31.0" text="Appointment">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="74.0" text="Fill the form to get an apoinment" />
+      <Label layoutX="24.0" layoutY="107.0" text="*Must Fill all the fields and check box" textFill="#ec0707" />
+      <Label layoutX="39.0" layoutY="138.0" text="Patient ID" />
+      <Label layoutX="27.0" layoutY="179.0" text="Patient Name:" />
+      <Label layoutX="17.0" layoutY="212.0" text="Application Date" />
+      <Label layoutX="20.0" layoutY="257.0" text="Application Time" />
+      <Label layoutX="17.0" layoutY="295.0" text="AppointmentDate" />
+      <Label layoutX="15.0" layoutY="337.0" text="Appointment Time" />
+      <TextField fx:id="PatientID" layoutX="140.0" layoutY="134.0" prefHeight="26.0" prefWidth="270.0" promptText="ID/User name" />
+      <TextField fx:id="pNameText" layoutX="140.0" layoutY="175.0" prefHeight="26.0" prefWidth="270.0" />
+      <TextField fx:id="AplicasonTimetextfield" layoutX="140.0" layoutY="253.0" prefHeight="26.0" prefWidth="270.0" />
+      <DatePicker fx:id="AplicasonDatepicker" layoutX="165.0" layoutY="208.0" prefHeight="26.0" prefWidth="270.0" />
+      <DatePicker fx:id="AppointDatepiker" layoutX="153.0" layoutY="291.0" prefHeight="26.0" prefWidth="270.0" />
+      <TextField fx:id="appointTimeTXTfild" layoutX="140.0" layoutY="333.0" prefHeight="26.0" prefWidth="270.0" />
+      <ComboBox fx:id="DocCombo" layoutX="142.0" layoutY="373.0" prefHeight="26.0" prefWidth="270.0" promptText="Select Doctors visiting hour" />
+      <Button layoutX="491.0" layoutY="431.0" mnemonicParsing="false" onAction="#SubmitOnAction" text="Submit" />
+      <CheckBox fx:id="Infectcheckbox" layoutX="140.0" layoutY="413.0" mnemonicParsing="false" text="Infected" />
+      <CheckBox fx:id="NonInfectcheckbox" layoutX="140.0" layoutY="435.0" mnemonicParsing="false" text="Non-Infected" />
+   </children>
+</AnchorPane>

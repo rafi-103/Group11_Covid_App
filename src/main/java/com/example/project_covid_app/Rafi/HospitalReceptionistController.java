@@ -37,4 +37,20 @@ public class HospitalReceptionistController {
         alert.setContentText(Context);
         alert.showAndWait();
     }
+
+    @javafx.fxml.FXML
+    public void AppoinmentOnAction(ActionEvent actionEvent) throws IOException {
+        Parent root =FXMLLoader.load(getClass().getResource("Appointment.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene((root)));
+        stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void PListOnAction(ActionEvent actionEvent) throws IOException {
+        Parent root =FXMLLoader.load(getClass().getResource("PList.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene((root)));
+        stage.show();
+    }
 }
