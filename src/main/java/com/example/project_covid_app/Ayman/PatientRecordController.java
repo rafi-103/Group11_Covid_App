@@ -13,8 +13,8 @@ public class PatientRecordController {
     public void initialize() {
         var data = FXCollections.observableArrayList(
                 new Patient("P001", "Ayman Rahman", "Depressed"),
-                new Patient("P002", "Rafi", "Cancer"),
-                new Patient("P003", "Elon Musk", "BiPolar"),
+                new Patient("P002", "Rafi", "Chemo"),
+                new Patient("P003", "Elon Musk", "Recovery"),
                 new Patient("P004", "Sheikh Hasina", "Schizophrenia"),
                 new Patient("P005", "Obaidul Kader", "Dementia")
         );
