@@ -13,17 +13,16 @@
 
    <TabPane layoutX="20" layoutY="80" prefWidth="760" prefHeight="500">
       <Tab text="Prescriptions">
-         <fx:include source="PrescriptionPane.fxml"/>
+         <fx:include source="prescriptionPane.fxml"/>
       </Tab>
       <Tab text="Inventory">
-         <fx:include source="InventoryPane.fxml"/>
+         <fx:include source="inventoryPane.fxml"/>
       </Tab>
       <Tab text="Refill">
-         <fx:include source="RefillPane.fxml"/>
+         <fx:include source="refillPane.fxml"/>
       </Tab>
       <Tab text="History">
-         <fx:include source="TransactionHistoryPane.fxml"/>
+         <fx:include source="transactionHistoryPane.fxml"/>
       </Tab>
    </TabPane>
 </AnchorPane>
-

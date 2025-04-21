@@ -22,6 +22,8 @@ public class LoginController {
     private Button loginbtn;
     @FXML
     private AnchorPane regisbtn;
+    @FXML
+    private Button loginViewRegisterBtn;
 
     @FXML
     public void initialize() {

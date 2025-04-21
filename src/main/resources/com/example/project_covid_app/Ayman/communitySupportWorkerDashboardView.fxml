@@ -13,8 +13,8 @@
 
     <TabPane layoutX="20" layoutY="80" prefWidth="760" prefHeight="500">
         <Tab text="Patients">
-            <fx:include source="PatientRecordPane.fxml"/>
+            <fx:include source="patientRecordPane.fxml"/>
         </Tab>
-        <!-- Add more tabs for other goals -->
+
     </TabPane>
 </AnchorPane>

@@ -16,5 +16,5 @@
     <Label layoutX="150" layoutY="250" text="Role:" />
     <ChoiceBox fx:id="cbRole" layoutX="250" layoutY="245" />
     <Button fx:id="loginbtn" layoutX="270" layoutY="310" onAction="#onLogin" text="Login" />
-   <Button layoutX="347.0" layoutY="310.0" onAction="#onSignIn" text="Register" />
+   <Button fx:id="loginViewRegisterBtn" layoutX="347.0" layoutY="310.0" onAction="#onSignIn" text="Register" />
 </AnchorPane>
