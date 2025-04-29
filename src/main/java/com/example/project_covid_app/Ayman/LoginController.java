@@ -15,9 +15,12 @@ import java.io.IOException;
 import java.util.prefs.Preferences;
 
 public class LoginController {
-    @FXML private TextField tfUsername;
-    @FXML private PasswordField pfPassword;
-    @FXML private ChoiceBox<String> cbRole;
+    @FXML
+    private TextField tfUsername;
+    @FXML
+    private PasswordField pfPassword;
+    @FXML
+    private ChoiceBox<String> cbRole;
     @FXML
     private Button loginbtn;
     @FXML
@@ -27,63 +30,65 @@ public class LoginController {
 
     @FXML
     public void initialize() {
-        cbRole.setItems(FXCollections.observableArrayList("Pharmacist", "Community Support Worker", "Hospital","Nurse","Vaccination staff","Quarintine Monitor","Doctor", "Patient"));
+        cbRole.setItems(FXCollections.observableArrayList("Pharmacist", "Community Support Worker", "Hospital", "Nurse", "Vaccination staff", "Quarintine Monitor", "Doctor", "Patient"));
         cbRole.getSelectionModel().selectFirst();
     }
 
+
+
+//    @FXML
+//    private void onLogin() {
+//        if (tfUsername.getText().isEmpty() || pfPassword.getText().isEmpty()) {
+//            new Alert(Alert.AlertType.ERROR, "Enter Login Details!").show();
+//            return;
+//        }
+//        String role = cbRole.getValue();
+//        Preferences.userNodeForPackage(LoginController.class)
+//                .put("loggedInRole", role);
+//
+//        Stage stage = (Stage) tfUsername.getScene().getWindow();
+//        String fxml = role.equals("Pharmacist")
+//                ? "/com/example/project_covid_app/Ayman/PharmacistDashboardView.fxml"
+//                : "/com/example/project_covid_app/Ayman/CommunitySupportWorkerDashboardView.fxml";
+//
+//        SceneLoader.loadScene(stage, fxml);
+//    }
     @FXML
     private void onLogin() {
         if (tfUsername.getText().isEmpty() || pfPassword.getText().isEmpty()) {
             new Alert(Alert.AlertType.ERROR, "Enter Login Details!").show();
             return;
         }
+
         String role = cbRole.getValue();
         Preferences.userNodeForPackage(LoginController.class)
                 .put("loggedInRole", role);
 
         Stage stage = (Stage) tfUsername.getScene().getWindow();
-        String fxml = role.equals("Pharmacist")
-                ? "/com/example/project_covid_app/Ayman/PharmacistDashboardView.fxml"
-                : "/com/example/project_covid_app/Ayman/CommunitySupportWorkerDashboardView.fxml";
+        String fxml;
+
+        switch (role) {
+            case "Pharmacist":
+                fxml = "/com/example/project_covid_app/Ayman/PharmacistDashboardView.fxml";
+                break;
+            case "Community Support Worker":
+                fxml = "/com/example/project_covid_app/Ayman/CommunitySupportWorkerDashboardView.fxml";
+                break;
+            case "Nurse":
+                fxml = "/com/example/project_covid_app/Rafi/Nurse.fxml";
+                break;
+            default:
+                new Alert(Alert.AlertType.ERROR, "Invalid Role Selected!").show();
+                return;
+        }
 
         SceneLoader.loadScene(stage, fxml);
     }
 
+
     @FXML
     public void onSignIn(ActionEvent actionEvent) {
     }
-
-
-
-    //  @FXML
-    //    public void saveUserList(ActionEvent actionEvent) {
-    //        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("data/user.bin"))) {
-    //            outputStream.writeObject(userList);
-    //            messageLabel.setText("Successfully saved to file.");
-    //        } catch (IOException e) {
-    //            e.printStackTrace();
-    //            messageLabel.setText("Could not write to file");
-    //        }
-    //    }
-    //
-    //    @FXML
-    //    public void loadUserList(ActionEvent actionEvent) {
-    //        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("data/user.bin"))) {
-    //            userList.clear();
-    //            tableView.getItems().clear();
-    //
-    //            List< User > loadedList = (List<User>) inputStream.readObject();
-    //            userList.addAll(loadedList);
-    //            tableView.getItems().addAll(loadedList);
-    //
-    //            messageLabel.setText("Successfully loaded data");
-    //        } catch (ClassNotFoundException e) {
-    //            e.printStackTrace();
-    //            messageLabel.setText("Invalid file format");
-    //        } catch (IOException e) {
-    //            e.printStackTrace();
-    //            messageLabel.setText("Could not load data from file!");
-    //        }
-    //    }
-    //}
 }
+
+

@@ -49,3 +49,37 @@ public class PatientRecordController {
         new Alert(Alert.AlertType.INFORMATION, "Status updated successfully!").show();
     }
 }
+
+
+// //  @FXML
+//    //    public void saveUserList(ActionEvent actionEvent) {
+//    //        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("data/user.bin"))) {
+//    //            outputStream.writeObject(userList);
+//    //            messageLabel.setText("Successfully saved to file.");
+//    //        } catch (IOException e) {
+//    //            e.printStackTrace();
+//    //            messageLabel.setText("Could not write to file");
+//    //        }
+//    //    }
+//    //
+//    //    @FXML
+//    //    public void loadUserList(ActionEvent actionEvent) {
+//    //        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("data/user.bin"))) {
+//    //            userList.clear();
+//    //            tableView.getItems().clear();
+//    //
+//    //            List< User > loadedList = (List<User>) inputStream.readObject();
+//    //            userList.addAll(loadedList);
+//    //            tableView.getItems().addAll(loadedList);
+//    //
+//    //            messageLabel.setText("Successfully loaded data");
+//    //        } catch (ClassNotFoundException e) {
+//    //            e.printStackTrace();
+//    //            messageLabel.setText("Invalid file format");
+//    //        } catch (IOException e) {
+//    //            e.printStackTrace();
+//    //            messageLabel.setText("Could not load data from file!");
+//    //        }
+//    //    }
+//    //}
+//}
